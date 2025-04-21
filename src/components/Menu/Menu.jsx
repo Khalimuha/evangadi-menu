@@ -17,7 +17,7 @@
 // export default Menu;
 
 // class-based Menu component
-import React, { Component } from 'react';
+import { Component } from 'react';
 import './menu.css';
 
 class Menu extends Component {
@@ -26,12 +26,14 @@ class Menu extends Component {
 
     return (
       <div className="single-food">
+      
         <img src={img} alt={title} />
         <div className="title-price">
           <h3>{title}</h3>
           <p>{price}</p>
-        </div>
-        <p className="food-desc">{desc}</p>
+          </div>
+
+          <div className='food-desc'> {desc}</div>
       </div>
     );
   }
