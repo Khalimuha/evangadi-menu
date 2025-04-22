@@ -16,18 +16,19 @@
 
 // export default Menu;
 
-// class-based Menu component
-import { Component } from 'react';
-import './menu.css';
+//* class-based Menu component
 
-class Menu extends Component {
+import { Component } from 'react';
+import './FoodItem.css';
+
+class FoodItem extends Component {
   render() {
     const { img, title, price, desc } = this.props;
 
     return (
       <div className="single-food">
       
-        <img src={img} alt={title} />
+        <img src={img} />
         <div className="title-price">
           <h3>{title}</h3>
           <p>{price}</p>
@@ -39,7 +40,7 @@ class Menu extends Component {
   }
 }
 
-export default Menu;
+export default FoodItem;
 
 
 
